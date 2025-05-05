@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Space Exploration PWA</title>
+  <link rel="stylesheet" href="pwa.css" />
+  <link rel="manifest" href="pwa.json" />
+  <script defer src="pwa.js"></script>
+</head>
+
+<body>
+  <h1>Explore Space</h1>
+  <canvas id="spaceCanvas" width="800" height="400"></canvas>
+  <div class="controls">
+    <select id="topicSelector">
+      <option value="0">The Moon Landing</option>
+      <option value="1">Mars Rovers</option>
+      <option value="2">International Space Station (ISS)</option>
+    </select>
+    <button id="playAudio">Play Audio</button>
+  </div>
+
+  <div id="description"></div>
+  <audio id="topicAudio" src="" hidden></audio>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('service-worker.js')
+          .then(reg => console.log('Service Worker registered', reg))
+          .catch(err => console.error('Service Worker registration failed:', err));
+      });
+    }
+  </script>
+</body>
+
+</html>

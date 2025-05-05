@@ -1,0 +1,23 @@
+{
+    "space": [
+      {
+        "title": "The Moon Landing",
+        "description": "Apollo 11 was the spaceflight that landed the first two humans on the Moon in 1969.",
+        "image": "landing.jpg",
+        "audio": "landing.mp3"
+      },
+      {
+        "title": "Mars Rovers",
+        "description": "Mars rovers like Spirit, Opportunity, and Perseverance explore Mars’ surface to analyze its geology and search for signs of life.",
+        "image": "NASA_Mars_Rover.jpg",
+        "audio": "rover.mp3"
+      },
+      {
+        "title": "International Space Station (ISS)",
+        "description": "The ISS is a habitable space station that serves as a research lab and living space in low Earth orbit.",
+        "image": "spaceStation.webp",
+        "audio": "spaceStationsound.mp3"
+      }
+    ]
+  }
+  
