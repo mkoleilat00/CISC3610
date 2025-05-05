@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="https://progressier.app/RPzwVWk6um8vZqb0acKY/progressier.json" />
+    <script defer src="https://progressier.app/RPzwVWk6um8vZqb0acKY/script.js"></script>
+    <!-- Vercel Analytics -->
+    <script>
+      window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
+    <title>Savings Growth Estimator</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1> Rate of Return Calculator</h1>
+        <form id="savingsForm">
+            <div class="form-group">
+                <label for="initialAmount"> Starting Investment Amount :</label>
+                <input type="number" id="initialAmount" name="initialAmount" required>
+            </div>
+            <div class="form-group">
+                <label for="interestRate">Annual Interest Rate (API) %: </label>
+
+                <input type="number" id="interestRate" name="interestRate" step="0.01" required>
+            </div>
+            <div class="form-group">
+                <label for="years"> How many years you want your investment to grow:</label>
+                <input type="number" id="years" name="years" required>
+            </div>
+            <div class="form-group">
+                <label for="compoundFrequency">Compound Frequency:</label>
+                <select id="compoundFrequency" name="compoundFrequency">
+                    <option value="annually">Annually</option>
+                    <option value="semiannually">Semi-Annually</option>
+                    <option value="quarterly">Quarterly</option>
+                    <option value="monthly">Monthly</option>
+                </select>
+            </div>
+            <button type="button" onclick="calculateValue()">Calculate</button>
+            <button type="reset" onclick="reset()">Reset</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="formjs.js"></script>
+</body>
+
+</html>
