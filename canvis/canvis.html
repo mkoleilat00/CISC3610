@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Canvas Scene</title>
+  <link rel="stylesheet" href="canvis.css">
+</head>
+<body>
+  <h1>Interactive Canvas Scene with Forms</h1>
+
+  <canvas id="sceneCanvas" width="600" height="400"></canvas>
+
+  <div class="controls">
+    <div class="section">
+      <h3>Select Background:</h3>
+      <label><input type="radio" name="bg" value="bg1" checked> Beach</label>
+      <label><input type="radio" name="bg" value="bg2"> Forest</label>
+      <label><input type="radio" name="bg" value="bg3"> City</label>
+    </div>
+
+    <div class="section">
+      <h3>Move Character:</h3>
+      <input type="range" id="characterSlider" min="50" max="550" value="300">
+    </div>
+
+    <div class="section">
+      <h3>Toggle Items:</h3>
+      <label><input type="checkbox" id="item1"> Show Tree</label>
+      <label><input type="checkbox" id="item2"> Show Cloud</label>
+      <label><input type="checkbox" id="item3"> Show Ball</label>
+    </div>
+
+    <div class="section">
+      <h3>Play Sound Effects:</h3>
+      <button onclick="playSound(1)">Sound 1</button>
+      <button onclick="playSound(2)">Sound 2</button>
+      <button onclick="playSound(3)">Sound 3</button>
+    </div>
+  </div>
+
+  <audio id="sound1" src="wave.mp3"></audio>
+  <audio id="sound2" src="birds.mp3"></audio>
+  <audio id="sound3" src="carHonk.mp3"></audio>
+
+  <script src="canvis.js"></script>
+</body>
+</html>
