@@ -17,11 +17,11 @@ body {
 }
 
 h1, h2, h3, h4 {
-    color: white;
+    color: black;
 }
 
 label {
-    color: white;
+    color: black;
     display: block;
     margin-bottom: 5px;
 }
@@ -41,5 +41,5 @@ button {
 
 #result {
     margin-top: 20px;
-    color: white;
+    color: black;
 }
