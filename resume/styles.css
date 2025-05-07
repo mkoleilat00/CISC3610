@@ -23,6 +23,7 @@ body {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     padding: 15px 0;
     transition: var(--transition);
+    color: var(--accent-color);
 }
 
 .navbar-brand {
@@ -111,7 +112,6 @@ body {
 .hero-img {
     text-align: center;
 }
-
 /* Section Styles */
 section {
     padding: var(--section-padding);
