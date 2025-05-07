@@ -1,0 +1,129 @@
+/* Responsive Styles for Marwan Koleilat's Portfolio */
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    #hero h1 {
+        font-size: 2.8rem;
+    }
+    
+    #hero h2 {
+        font-size: 1.8rem;
+    }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    #hero {
+        height: auto;
+        padding: 120px 0 60px 0;
+    }
+    
+    #hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    #hero h2 {
+        font-size: 1.6rem;
+    }
+    
+    #hero .hero-img {
+        margin-top: 40px;
+    }
+    
+    .about .content {
+        margin-top: 30px;
+    }
+    
+    .skill-item {
+        margin-bottom: 30px;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    #hero h1 {
+        font-size: 2.2rem;
+    }
+    
+    #hero h2 {
+        font-size: 1.4rem;
+    }
+    
+    .section-title h2 {
+        font-size: 2rem;
+    }
+    
+    .education-item,
+    .info,
+    .contact-form {
+        padding: 20px;
+    }
+    
+    .info div {
+        margin-bottom: 20px;
+    }
+    
+    .contact .info {
+        margin-bottom: 30px;
+    }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    #hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    #hero h2 {
+        font-size: 1.2rem;
+    }
+    
+    #hero p {
+        font-size: 1rem;
+    }
+    
+    .section-title h2 {
+        font-size: 1.8rem;
+    }
+    
+    .about h3,
+    .timeline-content h3,
+    .project-box h3,
+    .education-item h3 {
+        font-size: 1.2rem;
+    }
+    
+    .about .content ul li {
+        font-size: 0.9rem;
+    }
+    
+    .btn-primary,
+    .btn-secondary {
+        padding: 8px 20px;
+        font-size: 0.9rem;
+    }
+    
+    .project-links .btn {
+        margin-bottom: 10px;
+    }
+    
+    .info i {
+        width: 30px;
+        height: 30px;
+        font-size: 1rem;
+    }
+    
+    .info h4 {
+        padding-left: 45px;
+        font-size: 1rem;
+    }
+    
+    .info p {
+        padding-left: 45px;
+        font-size: 0.9rem;
+    }
+    
+    #footer h3 {
+        font-size: 1.5rem;
+    }
+}
